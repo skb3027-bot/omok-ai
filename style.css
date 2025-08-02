@@ -1,0 +1,23 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(15, 24px);
+  grid-template-rows: repeat(15, 24px);
+  margin: 10px auto;
+}
+.cell {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4e2d8;
+  font-size: 20px;
+}
+.cell.black { color: black; }
+.cell.white { color: white; background: black; }
